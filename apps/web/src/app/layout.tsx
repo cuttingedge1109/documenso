@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 
-import { Caveat, Inter } from 'next/font/google';
+// import { Caveat, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import { FeatureFlagProvider } from '@documenso/lib/client-only/providers/feature-flag';
 import { LocaleProvider } from '@documenso/lib/client-only/providers/locale';
@@ -16,8 +17,18 @@ import { PostHogPageview } from '~/providers/posthog';
 
 import './globals.css';
 
-const fontInter = Inter({ subsets: ['latin'], variable: '--font-sans' });
-const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
+// const fontInter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const fontInter = localFont({
+  src: '../fonts/inter/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2',
+  display: 'swap',
+  variable: '--font-sans',
+});
+// const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
+const fontCaveat = localFont({
+  src: '../fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
+  display: 'swap',
+  variable: '--font-signature',
+});
 
 export const metadata = {
   title: 'Documenso - The Open Source DocuSign Alternative',
