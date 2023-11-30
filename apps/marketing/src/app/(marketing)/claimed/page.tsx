@@ -19,7 +19,7 @@ import { PasswordReveal } from '~/components/(marketing)/password-reveal';
 //   display: 'swap',
 // });
 const fontCaveat = localFont({
-  src: '~/fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
+  src: '../../../fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
 });
 

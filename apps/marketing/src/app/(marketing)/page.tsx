@@ -14,7 +14,7 @@ export const revalidate = 600;
 
 // const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
 const fontCaveat = localFont({
-  src: '~/fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
+  src: '../../fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
   variable: '--font-caveat',
 });

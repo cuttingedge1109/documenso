@@ -17,13 +17,13 @@ import './globals.css';
 
 // const fontInter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const fontInter = localFont({
-  src: '~/fonts/inter/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2',
+  src: '../fonts/inter/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2',
   display: 'swap',
   variable: '--font-sans',
 });
 // const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
 const fontCaveat = localFont({
-  src: '~/fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
+  src: '../fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
   variable: '--font-signature',
 });
