@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { Caveat } from 'next/font/google';
+// import { Caveat } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import { Check, ChevronsUpDown, Info } from 'lucide-react';
 import { useFieldArray, useForm } from 'react-hook-form';
@@ -35,9 +36,14 @@ import {
 import { FieldItem } from './field-item';
 import { DocumentFlowStep, FRIENDLY_FIELD_TYPE } from './types';
 
-const fontCaveat = Caveat({
-  weight: ['500'],
-  subsets: ['latin'],
+// const fontCaveat = Caveat({
+//   weight: ['500'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-caveat',
+// });
+const fontCaveat = localFont({
+  src: '../../../fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
   variable: '--font-caveat',
 });

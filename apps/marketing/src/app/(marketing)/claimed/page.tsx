@@ -1,4 +1,5 @@
-import { Caveat } from 'next/font/google';
+// import { Caveat } from 'next/font/google';
+import localFont from 'next/font/local';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
@@ -12,9 +13,13 @@ import { Button } from '@documenso/ui/primitives/button';
 
 import { PasswordReveal } from '~/components/(marketing)/password-reveal';
 
-const fontCaveat = Caveat({
-  weight: ['500'],
-  subsets: ['latin'],
+// const fontCaveat = Caveat({
+//   weight: ['500'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// });
+const fontCaveat = localFont({
+  src: '~/fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
 });
 

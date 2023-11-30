@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars, @typescript-eslint/no-unused-vars */
-import { Caveat } from 'next/font/google';
+// import { Caveat } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import { cn } from '@documenso/ui/lib/utils';
 
@@ -11,12 +12,18 @@ import { ShareConnectPaidWidgetBento } from '~/components/(marketing)/share-conn
 
 export const revalidate = 600;
 
-const fontCaveat = Caveat({
-  weight: ['500'],
-  subsets: ['latin'],
+// const fontCaveat = Caveat({ subsets: ['latin'], variable: '--font-signature' });
+const fontCaveat = localFont({
+  src: '~/fonts/caveat/Wnz6HAc5bAfYB2Q7ZjYY.woff2',
   display: 'swap',
   variable: '--font-caveat',
 });
+// const fontCaveat = Caveat({
+//   weight: ['500'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-caveat',
+// });
 
 export default async function IndexPage() {
   const starCount = await fetch('https://api.github.com/repos/documenso/documenso', {
